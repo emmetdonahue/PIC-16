@@ -126,9 +126,7 @@ def partition(dataset, labels, p):
     for i in range(len(test_target)):
         if test_target[i] == prediction[i]:
             correct += 1.0
-            
-    print correct
-            
+                        
     accuracy =  (correct/len(test_data))*100
     print 'Accuracy:', accuracy, '%'
     
